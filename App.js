@@ -5,9 +5,10 @@ import LoginScreen from './components/loginScreen';
 import  Loadingpage  from './components/loading';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Register from './components/Register';
-import Loadingpage2 from './components/Loadingpage2';
+// import Loadingpage2 from './components/loading2.js';
 import { HomepageTab } from './components/tab.js';
-import { Prescription } from './components/prescriptionpage.js';
+import Loadingpage2 from './components/loading2.js';
+import Loadingpage3 from './components/loadingscreen3.js';
 
 
 const Stack = createNativeStackNavigator();
@@ -37,6 +38,7 @@ export const App = () => {
         component={Loadingpage2}
         options={{headerShown:false}}
         />
+        
          <Stack.Screen
         name="Register"
         component={Register}
@@ -47,12 +49,11 @@ export const App = () => {
         component={HomepageTab}
         options={{headerShown:false}}
         />
-         {/* <Stack.Screen
-        name='Prescription'
-        component={Prescription}
+         <Stack.Screen
+        name="Loadingpage3"
+        component={Loadingpage3}
         options={{headerShown:false}}
-        /> */}
-
+        />
       </Stack.Navigator>
       
     </NavigationContainer>

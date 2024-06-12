@@ -58,7 +58,7 @@ const Register = ({navigation}) => {
                         Alert.alert("Registration Successfull","Your Account has been Created Please Login your Account")
 
                         setTimeout(()=>{
-                            navigation.navigate('loadingScreen')
+                            navigation.navigate('Loadingpage3')
                         },2000)
                        
                      }}
@@ -70,7 +70,7 @@ const Register = ({navigation}) => {
                 <View style={styles.footerTextContainer}>
                     <Text style={styles.footerTexts}> Already have an Accoun !</Text>
                     <TouchableOpacity
-                    onPress={()=>{navigation.navigate('loadingScreen');}}
+                    onPress={()=>{navigation.navigate('Loadingpage3');}}
                     >
                         <Text style={[styles.footerTexts, styles.loginBtn]}>Login</Text>
                     </TouchableOpacity>
