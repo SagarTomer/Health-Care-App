@@ -3,11 +3,11 @@ import React, { useEffect } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, Image, ViewBase } from 'react-native';
 import LottieView from 'lottie-react-native';
 
-const Loadingpage = ({navigation}) => {
+const Loadingpage2 = ({navigation}) => {
     useEffect(()=>{
         
     const timer = setTimeout(() => {
-        navigation.replace('HomePage');
+        navigation.replace('Register');
       }, 1200);
       return () => clearTimeout(timer); 
     },[navigation])
@@ -22,4 +22,4 @@ autoPlay loop />
 
 </>
   )}
-export default Loadingpage;
+export default Loadingpage2;

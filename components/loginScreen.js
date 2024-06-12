@@ -65,7 +65,9 @@ const LoginPage = ({navigation}) => {
                     <Text style={styles.donthaveText}>
                         Don't Have an Account :
                     </Text>
-                    <TouchableOpacity>
+                    <TouchableOpacity
+                     onPress={()=>{ navigation.navigate('loadingScreen2');}}
+                    >
                         <Text style={styles.register}>
                             Click here to register
                         </Text>
